@@ -6,9 +6,9 @@ pathSlice.forEach((element) => {
     currentPathName += element + "/";
     if (element !== "pages") {
         if (element === "obory") {
-            drobMenuDiv.innerHTML += `<a href =/${path[1]}/#${element}>${element}</a>`
+            drobMenuDiv.innerHTML += `<a href =/${path[1]}/#${element}>${element.charAt(0).toUpperCase() + element.slice(1)}</a>`
         } else {
-            drobMenuDiv.innerHTML += `<a href =/${currentPathName}>${element}</a>`
+            drobMenuDiv.innerHTML += `<a href =/${currentPathName}>${element.charAt(0).toUpperCase() + element.slice(1)}</a>`
         }
         if (element !== pathSlice[pathSlice.length - 1]) {
             drobMenuDiv.innerHTML += "<span> &gt </span>";

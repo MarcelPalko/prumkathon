@@ -32,3 +32,6 @@
   flex-direction: row;
   gap: 40px;
 }
+.content-img{
+  height: 400px;
+}
