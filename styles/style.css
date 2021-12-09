@@ -185,15 +185,19 @@ body {
   color: var(--main-blue-color);
 }
 
-.content-section:first-child .content-section__box--reversed {
+.content-section__box--reversed a {
+  text-decoration: none;
+}
+
+.content-section:first-child .content-section__box--reversed a {
   color: #008165;
 }
 
-.content-section:nth-child(2) .content-section__box--reversed {
+.content-section:nth-child(2) .content-section__box--reversed a {
   color: #f28a1e;
 }
 
-.content-section:nth-child(3) .content-section__box--reversed {
+.content-section:nth-child(3) .content-section__box--reversed a {
   color: #ac2a28;
 }
 
