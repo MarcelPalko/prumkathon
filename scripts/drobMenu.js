@@ -6,7 +6,7 @@ pathSlice.forEach((element) => {
     currentPathName += element + "/";
     if (element !== "pages") {
         if (element === "obory") {
-            drobMenuDiv.innerHTML += `<a href =${path[1]}/#${element}>${element}</a>`
+            drobMenuDiv.innerHTML += `<a href =/#${element}>${element}</a>`
         } else {
             drobMenuDiv.innerHTML += `<a href =/${currentPathName}>${element}</a>`
         }
