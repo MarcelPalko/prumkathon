@@ -9,12 +9,19 @@
   --green-text-color: #00d100;
   --default-blue: #193c6a;
   --white-text-color: #fff;
+
+  --menu-background-color: #193c6a;
+  --menu-items-color: #fff;
+  --headings-color: #fff;
 }
 
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +30,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -34,7 +42,7 @@ body {
   width: 100%;
   height: 50px;
   padding: 15px 25px;
-  background-color: var(--default-blue);
+  background-color: var(--menu-background-color);
 }
 
 .header__logo {
@@ -49,11 +57,10 @@ body {
   padding-right: 10%;
 
   font-size: 25px;
-  color: white;
 }
 
 .header__content-hover {
-  color: var(--white-text-color);
+  color: var(--menu-items-color);
   text-decoration: none;
 }
 
@@ -81,7 +88,6 @@ body {
   margin-top: 5vh;
   padding: 20px 0px 20px 0px;
 
-  font-family: "arial";
   font-size: 70px;
   text-shadow: 2px 2px 2px #000000;
   line-height: 1.5;
@@ -192,15 +198,19 @@ body {
   color: var(--main-blue-color);
 }
 
-.content-section:first-child .content-section__box--reversed {
+.content-section__box--reversed a {
+  text-decoration: none;
+}
+
+.content-section:first-child .content-section__box--reversed a {
   color: #008165;
 }
 
-.content-section:nth-child(2) .content-section__box--reversed {
+.content-section:nth-child(2) .content-section__box--reversed a {
   color: #f28a1e;
 }
 
-.content-section:nth-child(3) .content-section__box--reversed {
+.content-section:nth-child(3) .content-section__box--reversed a {
   color: #ac2a28;
 }
 
