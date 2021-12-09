@@ -322,7 +322,7 @@ li a {
 
   text-align: center;
   text-decoration: none;
-  color: var(--default-blue-color) !important;
+  color: var(--default-blue-color);
 }
 
 li ul {
@@ -363,6 +363,10 @@ ul {
 
 .default-cursor {
   cursor: default;
+}
+
+.white-color {
+  color: var(--white-text-color) !important;
 }
 
 @keyframes fadeIn {
