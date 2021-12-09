@@ -51,6 +51,11 @@ body {
   color: white;
 }
 
+.header__content-hover {
+  color: var(--white-text-color);
+  text-decoration: none;
+}
+
 .header__content-hover:hover {
   cursor: pointer;
   transition: all 0.3s ease 0s;
