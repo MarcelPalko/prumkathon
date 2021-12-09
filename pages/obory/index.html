@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="" rel="stylesheet" id="externalFont" />
     <script src="../../config/config.js" defer></script>
+    <script src="../../scripts/drobMenu.js" defer></script>
   </head>
   <body>
     <!--HEADER-->
@@ -23,6 +24,9 @@
       </div>
     </div>
     <!--CONTENT-->
+    <div class="drob-menu-line">
+      <div class="drob-menu" id="drob-menu"></div>
+    </div>
     <div class="content">
       <div class="content-title">
         <h1 id="title">Informační technologie</h1>
@@ -75,9 +79,5 @@
       </div>
       <div><img class="footer__logo" /></div>
     </div>
-    <script>
-      const n = new URL(window.location.href);
-      //alert(n.searchParams.get("x"));
-    </script>
   </body>
 </html>
