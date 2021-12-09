@@ -36,24 +36,3 @@
   flex-direction: row;
   gap: 40px;
 }
-.drob-menu{
-  padding-left: 45px;
-  padding-top: 10px;
-  font-size: 20px;
-  color: var(--main-text-color);
-}
-.drob-menu>a,
-.drob-menu>*{
-  text-decoration: none;
-  color: var(--main-text-color);
-}
-.drob-menu>a:hover{
-  text-decoration: underline;
-}
-.drob-menu-line{
-  width: 100%;
-  background-color: #f1f8fd;
-  padding-bottom: 4px;
-}
-
-

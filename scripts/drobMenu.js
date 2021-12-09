@@ -2,7 +2,6 @@ const drobMenuDiv = document.getElementById("drob-menu")
 path = window.location.pathname.split('/')
 let pathSlice = path.slice(1, -1);
 let currentPathName = "";
-console.log(path[1])
 pathSlice.forEach((element) => {
     currentPathName += element + "/";
     if (element !== "pages") {
