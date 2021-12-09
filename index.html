@@ -3,112 +3,13 @@
     <meta charset="utf-8" />
     <title>ACES</title>
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./fontawesome/css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="" rel="stylesheet" id="externalFont" />
-    <script src="./scripts/slider.js" defer></script>
     <script src="./config/config.js" defer></script>
   </head>
   <body>
-    <!--HEADER-->
-    <div class="header">
-      <div>
-        <img class="header__logo" />
-      </div>
-      <div class="header__content">
-        <ul class="no-list-style">
-          <li>
-            <div class="default-cursor white-color">Obory</div>
-            <ul>
-              <li>
-                <a class="default-cursor">Obory M</a>
-                <ul>
-                  <li>
-                    <a href="pages/obory/index.html?subject=IT"
-                      >Informační technologie</a
-                    >
-                  </li>
-                  <li>
-                    <a href="pages/obory/index.html?subject=TL"
-                      >Technické lyceum</a
-                    >
-                  </li>
-                  <li>
-                    <a href="pages/obory/index.html?subject=ENE">Energetika</a>
-                  </li>
-                  <li>
-                    <a href="pages/obory/index.html?subject=STR"
-                      >Strojírenství</a
-                    >
-                  </li>
-                  <li>
-                    <a href="pages/obory/index.html?subject=AUT"
-                      >Průmyslová automizace</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a class="default-cursor">Obory L</a>
-                <ul>
-                  <li>
-                    <a href="pages/obory/index.html?subject=AUR">Autotronik</a>
-                  </li>
-                  <li>
-                    <a href="pages/obory/index.html?subject=MEL"
-                      >Mechanik elektrotechnik</a
-                    >
-                  </li>
-                  <li>
-                    <a href="pages/obory/index.html?subject=MSE"
-                      >Mechanik seřizovač</a
-                    >
-                  </li>
-                  <li>
-                    <a href="pages/obory/index.html?subject=OKU"
-                      >Uměleckořemeslné zpracování kovů</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a class="default-cursor">Obory H</a>
-                <ul>
-                  <li>
-                    <a href="pages/obory/index.html?subject=AMA"
-                      >Automechanik</a
-                    >
-                  </li>
-                  <li>
-                    <a href="pages/obory/index.html?subject=AME"
-                      >Autoelektrikář</a
-                    >
-                  </li>
-                  <li>
-                    <a href="pages/obory/index.html?subject=NAS">Nástrojař</a>
-                  </li>
-                  <li>
-                    <a href="pages/obory/index.html?subject=KAR">Karosař</a>
-                  </li>
-                  <li>
-                    <a href="pages/obory/index.html?subject=OKO"
-                      >Obráběč kovů pro CNC stroje</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-
-        <a class="header__content-hover" href="pages/kontakty/index.html"
-          >Kontakty</a
-        >
-        <a class="header__content-hover" href="pages/o-nas/index.html">O nás</a>
-      </div>
-    </div>
-    <!--SLIDER-->
+    <div class="header" id="menu"></div>
     <div class="slider-loader">
       <div id="slideLoaderLine" class="slider-loader__line"></div>
     </div>
@@ -116,7 +17,6 @@
       <div class="slider__text">nějaký text</div>
       <div class="slider__dots" id="dots"></div>
     </div>
-    <!--CONTENT-->
     <div class="content" id="obory">
       <div class="content-section">
         <div class="content-section__box">
@@ -175,34 +75,6 @@
         </div>
       </div>
     </div>
-    <!--FOOTER-->
-    <div class="footer">
-      <div></div>
-      <div class="footer__content">
-        <div class="footer__content-column">
-          <div class="footer__content-title">Kontakt</div>
-          <div>
-            <i class="fontawesome-icon fas fa-phone-alt"></i>111 222 333
-          </div>
-          <div>
-            <i class="fontawesome-icon fas fa-envelope"></i>student@exaple.cz
-          </div>
-          <div><i class="fontawesome-icon fas fa-download"></i>Ke stažení</div>
-        </div>
-        <div class="footer__content-column">
-          <div class="footer__content-title">Social Media</div>
-          <div><i class="fontawesome-icon fab fa-facebook-f"></i>Aces</div>
-          <div><i class="fontawesome-icon fab fa-twitter"></i>Aces</div>
-          <div><i class="fontawesome-icon fab fa-instagram"></i>Aces</div>
-        </div>
-        <div class="footer__content-column">
-          <div class="footer__content-title">About</div>
-          <div>prvni</div>
-          <div>druhe</div>
-          <div>treti</div>
-        </div>
-      </div>
-      <div><img class="footer__logo" /></div>
-    </div>
+    <div class="footer" id="footer"></div>
   </body>
 </html>
