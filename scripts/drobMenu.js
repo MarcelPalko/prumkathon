@@ -8,7 +8,7 @@ pathSlice.forEach((element) => {
         if (element === "obory") {
             drobMenuDiv.innerHTML += `<a href =${path[0]}/#${element}>${element}</a>`
         } else {
-            drobMenuDiv.innerHTML += `<a href =/>${element}</a>`
+            drobMenuDiv.innerHTML += `<a href =${path[0]}/${currentPathName}>${element}</a>`
         }
         if (element !== pathSlice[pathSlice.length - 1]) {
             drobMenuDiv.innerHTML += "<span> &gt </span>";
