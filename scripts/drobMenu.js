@@ -1,5 +1,5 @@
-const drobMenuDiv = document.getElementById("drob-menu")
-path = window.location.pathname.split('/')
+const drobMenuDiv = document.getElementById("drob-menu");
+path = window.location.pathname.split('/');
 let pathSlice = path.slice(1, -1);
 let currentPathName = "";
 pathSlice.forEach((element) => {

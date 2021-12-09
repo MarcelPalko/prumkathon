@@ -6,17 +6,15 @@
     <link rel="stylesheet" href="./fontawesome/css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
+    <link href="" rel="stylesheet" id="externalFont" />
     <script src="./scripts/slider.js" defer></script>
+    <script src="./config/config.js" defer></script>
   </head>
   <body>
     <!--HEADER-->
     <div class="header" flex="row">
       <div>
-        <img class="header__logo" src="imgs/logo.png" />
+        <img class="header__logo" />
       </div>
       <div class="header__content">
         <a class="header__content-hover" href="pages/obory/index.html?x=it"
@@ -27,18 +25,17 @@
         >
         <a class="header__content-hover" href="pages/o-nas/index.html">O nás</a>
       </div>
-   
     </div>
     <!--SLIDER-->
     <div class="slider-loader">
       <div id="slideLoaderLine" class="slider-loader__line"></div>
-    </div> 
+    </div>
     <div class="slider" id="slider">
       <div class="slider__text">nějaký text</div>
       <div class="slider__dots" id="dots"></div>
     </div>
     <!--CONTENT-->
-    <div class="content">
+    <div class="content" id="subjects">
       <div class="content-section">
         <div class="content-section__box">
           <div class="triangle"></div>
@@ -123,7 +120,7 @@
           <div>treti</div>
         </div>
       </div>
-      <div><img class="footer__logo" src="imgs/logo.png" /></div>
+      <div><img class="footer__logo" /></div>
     </div>
   </body>
 </html>
