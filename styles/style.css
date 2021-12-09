@@ -46,6 +46,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 5.208333333333333vw;
+  padding-right: 10%;
 
   font-size: 25px;
   color: white;
@@ -58,8 +59,6 @@ body {
 
 .header__content-hover:hover {
   cursor: pointer;
-  transition: all 0.3s ease 0s;
-  color: black;
 }
 
 .slider {
@@ -119,14 +118,14 @@ body {
   text-align: center;
   color: #f2f2f2;
 }
- .slider-loader{
+.slider-loader {
   background-color: gray;
   width: 100%;
-  height: 4px; 
-} 
-.slider-loader__line{
+  height: 4px;
+}
+.slider-loader__line {
   background-color: white;
-  height: 4px; 
+  height: 4px;
 }
 
 .content {
@@ -296,6 +295,66 @@ body {
   margin-right: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.no-list-style {
+  list-style: none;
+}
+
+li {
+  position: relative;
+}
+
+li a {
+  display: block;
+
+  text-align: center;
+  text-decoration: none;
+  color: var(--default-blue-color) !important;
+}
+
+li ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+
+  top: 100%;
+  position: absolute;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 1.5vw;
+  list-style: none;
+}
+
+li ul li a {
+  display: block;
+  text-align: left;
+
+  padding: 12px 16px;
+  color: #cccccc;
+  white-space: nowrap;
+}
+
+li ul li ul {
+  left: 100%;
+  top: 0;
+}
+
+ul li:hover > ul {
+  display: block;
+}
+
+ul {
+  z-index: 1;
+}
+
+.default-cursor {
+  cursor: default;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0.6;
@@ -312,4 +371,3 @@ body {
     width: 100%;
   }
 }
-
