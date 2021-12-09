@@ -39,6 +39,7 @@ importScript("scripts/drobMenu.js");
 importScript("scripts/menu.js");
 importScript("scripts/footer.js");
 importScript("scripts/slider.js");
+importScript("scripts/dynamicContextSubject.js");
 
 // CONFIGURATION OF THE VIEW
 const externalFontURL = document.querySelector("#externalFont");
