@@ -30,6 +30,7 @@ const capitalizeFirst = ([first, ...other]) => {
 };
 
 /** PAGE SETTINGS */
+const WEB_NAME = "" || "Průmkathon - ACES";
 const ICON = "" || "imgs/default-icon.png";
 const LOGO = "" || "imgs/default-logo.png";
 const FONT_URL =
@@ -40,70 +41,71 @@ const COLOR = {
   MENU_ITEMS: "#fff" || "#fff",
   HEADINGS: "#fff" || "#fff",
 };
-const SLIDER_TEXTS = ['Střední průmyslová<br>škola Třebíč', 'Máme dokonale<br>vybroušené vzdělání', 'Výborní učitelé<br>jsou klíčem k úspěchu'];
-
-const IMAGES_SRC = [
-  "imgs/slider1.png",
-  "imgs/slider2.jpg",
-  "imgs/slider3.jpg",
+const SLIDER_TEXTS = [
+  "Střední průmyslová<br>škola Třebíč",
+  "Máme dokonale<br>vybroušené vzdělání",
+  "Výborní učitelé<br>jsou klíčem k úspěchu",
 ];
 
+const IMAGES_SRC = ["imgs/slider1.png", "imgs/slider2.jpg", "imgs/slider3.jpg"];
+
 const MENU_ITEMS = ["EXPAND", "o-nas", "kontakty"];
-const MENU_EXPAND_ITEMS = [{
-  title: "obory",
-  children: [
-    {
-      title: "obory M",
-      children: [
-        {
-          title: "informační technologie",
-          link: "obory/index.html?subject=IT",
-        },
-        { title: "technické lyceum", link: "obory/index.html?subject=TL" },
-        { title: "energetika", link: "obory/index.html?subject=ENE" },
-        { title: "strojírenství", link: "obory/index.html?subject=STR" },
-        {
-          title: "průmyslová automatizace",
-          link: "obory/index.html?subject=AUT",
-        },
-      ],
-    },
-    {
-      title: "Obory L",
-      children: [
-        {
-          title: "Autotronik",
-          link: "obory/index.html?subject=AUR",
-        },
-        {
-          title: "Mechanik elektrotechnik",
-          link: "obory/index.html?subject=MEL",
-        },
-        { title: "Mechanik seřizovač", link: "obory/index.html?subject=MSE" },
-        {
-          title: "Uměleckořemeslné zpracování kovů",
-          link: "obory/index.html?subject=OKU",
-        },
-      ],
-    },
-    {
-      title: "Obory H",
-      children: [
-        {
-          title: "Automechanik",
-          link: "obory/index.html?subject=AMA",
-        },
-        { title: "Autoelektrikář", link: "obory/index.html?subject=AME" },
-        { title: "Nástrojař", link: "obory/index.html?subject=NAS" },
-        { title: "Karosář", link: "obory/index.html?subject=KAR" },
-        {
-          title: "Obráběč kovů pro CNC stroje",
-          link: "obory/index.html?subject=OKO",
-        },
-      ],
-    },
-  ],
-}
+const MENU_EXPAND_ITEMS = [
+  {
+    title: "obory",
+    children: [
+      {
+        title: "obory M",
+        children: [
+          {
+            title: "informační technologie",
+            link: "obory/index.html?subject=IT",
+          },
+          { title: "technické lyceum", link: "obory/index.html?subject=TL" },
+          { title: "energetika", link: "obory/index.html?subject=ENE" },
+          { title: "strojírenství", link: "obory/index.html?subject=STR" },
+          {
+            title: "průmyslová automatizace",
+            link: "obory/index.html?subject=AUT",
+          },
+        ],
+      },
+      {
+        title: "Obory L",
+        children: [
+          {
+            title: "Autotronik",
+            link: "obory/index.html?subject=AUR",
+          },
+          {
+            title: "Mechanik elektrotechnik",
+            link: "obory/index.html?subject=MEL",
+          },
+          { title: "Mechanik seřizovač", link: "obory/index.html?subject=MSE" },
+          {
+            title: "Uměleckořemeslné zpracování kovů",
+            link: "obory/index.html?subject=OKU",
+          },
+        ],
+      },
+      {
+        title: "Obory H",
+        children: [
+          {
+            title: "Automechanik",
+            link: "obory/index.html?subject=AMA",
+          },
+          { title: "Autoelektrikář", link: "obory/index.html?subject=AME" },
+          { title: "Nástrojař", link: "obory/index.html?subject=NAS" },
+          { title: "Karosář", link: "obory/index.html?subject=KAR" },
+          {
+            title: "Obráběč kovů pro CNC stroje",
+            link: "obory/index.html?subject=OKO",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 /** SCRIPTS IMPORT */
@@ -116,6 +118,7 @@ importScript("scripts/dynamicContextSubject.js");
 // CONFIGURATION OF THE VIEW
 const externalFontURL = document.querySelector("#externalFont");
 const stylesheet = document.documentElement;
+document.title = WEB_NAME;
 
 // COLORS
 stylesheet.style.setProperty("--menu-background-color", COLOR.MENU);
@@ -125,6 +128,7 @@ stylesheet.style.setProperty("--headings-color", COLOR.HEADINGS);
 // FONT
 externalFontURL.setAttribute("href", FONT_URL);
 document.querySelector("body").style.fontFamily = FONT_NAME;
+document.title = WEB_NAME;
 
 // ICON
 document.querySelector("#externalIcon").href = getTree() + ICON;
