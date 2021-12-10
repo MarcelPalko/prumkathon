@@ -7,7 +7,7 @@ const COLOR = {
   MENU_ITEMS: "#fff" || "#fff",
   HEADINGS: "#fff" || "#fff",
 };
-const SLIDER_TEXTS = ['nějaký text 1','nějaký text 2','nějaký text 3'];
+const SLIDER_TEXTS = ['nějaký text 1','nějaký text <br> text text','nějaký text 3'];
 
 const IMAGES_SRC = [
   "imgs/slider1.png",

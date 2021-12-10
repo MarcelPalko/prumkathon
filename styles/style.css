@@ -49,7 +49,7 @@ body {
 
 .slider__text {
   margin-left: 10vw;
-  margin-top: 5vh;
+  margin-top: 1vh;
   padding: 20px 0px 20px 0px;
 
   font-size: 70px;
@@ -182,7 +182,7 @@ body {
   cursor: pointer;
   display: flex;
 
-  font-size: calc(12px + 1.2vw);
+  font-size: calc(12px + 0.85vw);
 }
 
 .content-section__box--reversed h1::before {

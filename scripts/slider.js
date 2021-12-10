@@ -24,7 +24,7 @@ if (dotsDiv) {
     });
     dots[imgIndex].classList.add("slider__dots__dot-active");
 
-    textDiv.innerText = SLIDER_TEXTS[imgIndex % SLIDER_TEXTS.length]
+    textDiv.innerHTML = SLIDER_TEXTS[imgIndex % SLIDER_TEXTS.length]
     sliderDiv.style.backgroundImage = `url(${IMAGES_SRC[imgIndex]})`;
     sliderDiv.style.animation = "fadeIn 500ms";
 
