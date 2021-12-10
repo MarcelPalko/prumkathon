@@ -30,8 +30,7 @@ const getTree = () => {
 const importScript = (src) => {
   const script = document.createElement("script");
   script.src = getTree() + src;
-  script.setAttribute("defer", "");
-  document.querySelector("head").appendChild(script);
+  document.querySelector("body").appendChild(script);
 };
 
 /** SCRIPTS IMPORT */
