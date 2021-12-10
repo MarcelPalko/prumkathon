@@ -1,6 +1,6 @@
 let MENU_CONTENT = `
     <div>
-        <img class='header__logo' />
+        <a href="${getTree()}index.html"><img class='header__logo' /></a>
     </div>
     <div class='header__items'>
 `;

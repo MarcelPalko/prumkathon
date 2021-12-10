@@ -53,7 +53,7 @@ body {
   padding: 20px 0px 20px 0px;
 
   font-size: 70px;
-  text-shadow: 2px 2px 2px #000000;
+  font-weight: bold;
   line-height: 1.5;
   color: var(--headings-color);
 }
@@ -104,6 +104,14 @@ body {
   background-color: var(--white-background-color);
 }
 
+.content__kontakty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 .content-section {
   display: flex;
   width: 100%;
@@ -136,7 +144,6 @@ body {
 
 .content-section__box h1 {
   font-size: calc(12px + 1.5vw);
-  
 }
 
 .content-section:nth-child(2) .content-section__box,
@@ -181,6 +188,7 @@ body {
 .content-section__box--reversed h1 {
   cursor: pointer;
   display: flex;
+  align-items: center;
 
   font-size: calc(12px + 0.85vw);
 }
@@ -238,6 +246,83 @@ a {
   width: 100%;
   background-color: #f1f8fd;
   padding-bottom: 4px;
+}
+
+.content-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.content-row__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 5.208vw;
+
+  overflow: hidden;
+}
+
+.content-row__wrap-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5.208vw;
+
+  overflow: hidden;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 60%;
+}
+
+.content-column__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+
+  max-width: 80%;
+  padding: 30px 0;
+}
+
+.content-text__o-nas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+
+  max-width: 80%;
+  padding: 30px 0;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.kontakty-img {
+  height: calc(200px + 30vw);
+}
+
+.o-nas-img {
+  height: calc(200px + 15vw);
 }
 
 @keyframes fadeIn {

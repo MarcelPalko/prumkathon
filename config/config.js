@@ -30,6 +30,7 @@ const capitalizeFirst = ([first, ...other]) => {
 };
 
 /** PAGE SETTINGS */
+const ICON = "" || "imgs/default-icon.png";
 const LOGO = "" || "imgs/default-logo.png";
 const FONT_URL =
   "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap";
@@ -39,7 +40,7 @@ const COLOR = {
   MENU_ITEMS: "#fff" || "#fff",
   HEADINGS: "#fff" || "#fff",
 };
-const SLIDER_TEXTS = ['nějaký text 1', 'nějaký text <br> text text', 'nějaký text 3'];
+const SLIDER_TEXTS = ['Střední průmyslová<br>škola Třebíč', 'Máme dokonale<br>vybroušené vzdělání', 'Výborní učitelé<br>jsou klíčem k úspěchu'];
 
 const IMAGES_SRC = [
   "imgs/slider1.png",
@@ -124,3 +125,6 @@ stylesheet.style.setProperty("--headings-color", COLOR.HEADINGS);
 // FONT
 externalFontURL.setAttribute("href", FONT_URL);
 document.querySelector("body").style.fontFamily = FONT_NAME;
+
+// ICON
+document.querySelector("#externalIcon").href = getTree() + ICON;

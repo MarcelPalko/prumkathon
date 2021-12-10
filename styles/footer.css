@@ -10,6 +10,11 @@
   background-color: var(--menu-background-color);
 }
 
+.footer a {
+  text-decoration: none;
+  color: var(--white-text-color);
+}
+
 .footer__content {
   display: flex;
   flex-direction: row;

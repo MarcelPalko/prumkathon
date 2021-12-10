@@ -3,28 +3,30 @@ const FOOTER_CONTENT = `
     <div class="footer__content">
         <div class="footer__content-column">
           <div class="footer__content-title">Kontakt</div>
-          <div>
+          <a href="#"><div>
             <i class="fontawesome-icon fas fa-phone-alt"></i>111 222 333
-          </div>
-          <div>
+          </div></a>
+          <a href="#"><div>
             <i class="fontawesome-icon fas fa-envelope"></i>student@exaple.cz
-          </div>
-        <div><i class="fontawesome-icon fas fa-download"></i>Ke stažení</div>
+          </div></a>
+          <a href="#"><div><i class="fontawesome-icon fas fa-download"></i>Ke stažení</div></a>
     </div>
     <div class="footer__content-column">
         <div class="footer__content-title">Social Media</div>
-          <div><i class="fontawesome-icon fab fa-facebook-f"></i>Aces</div>
-          <div><i class="fontawesome-icon fab fa-twitter"></i>Aces</div>
-          <div><i class="fontawesome-icon fab fa-instagram"></i>Aces</div>
+          <a href="#"><div><i class="fontawesome-icon fab fa-facebook-f"></i>Aces</div></a>
+          <a href="#"><div><i class="fontawesome-icon fab fa-twitter"></i>Aces</div></a>
+          <a href="#"><div><i class="fontawesome-icon fab fa-instagram"></i>Aces</div></a>
         </div>
     <div class="footer__content-column">
         <div class="footer__content-title">About</div>
-          <div>prvni</div>
-          <div>druhe</div>
-          <div>treti</div>
+          <a href="#"><div>Blog</div></a>
+          <a href="#"><div>Demo</div></a>
+          <a href="#"><div>Support</div></a>
         </div>
     </div>
-    <div><img class="footer__logo" /></div>
+    <div>
+      <a href="${getTree()}index.html"><img class="footer__logo" /></a>
+    </div>
 `;
 
 document.querySelector("#footer").innerHTML += FOOTER_CONTENT;

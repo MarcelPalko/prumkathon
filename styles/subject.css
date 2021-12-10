@@ -36,6 +36,8 @@
 .content-body__text {
   min-width: 100px;
   max-width: 500px;
+  line-height: 30px;
+  font-size: calc(10px + 0.52vw);
 }
 
 .content-img {
