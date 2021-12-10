@@ -7,7 +7,7 @@
   width: 100%;
   height: 150px;
   padding: 15px 25px;
-  background-color: var(--default-blue);
+  background-color: var(--menu-background-color);
 }
 
 .footer__content {
@@ -22,7 +22,7 @@
 
 .footer__logo {
   height: 50px;
-  width: 120px;
+  /* width: 120px; */
 }
 
 .footer__content-column {

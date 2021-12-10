@@ -12,7 +12,7 @@
 
 .header__logo {
   height: 50px;
-  width: 120px;
+  /* width: 120px; */
 }
 
 .header__items {
@@ -29,7 +29,7 @@
 }
 
 .header__items ul li > div {
-  color: var(--white-text-color);
+  color: var(--menu-items-color);
 }
 
 .header__items ul li ul {

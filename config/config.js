@@ -1,4 +1,4 @@
-const LOGO = "" || "imgs/default-logo.png";
+const LOGO = "" || "imgs/default-logo1.png";
 const FONT_URL =
   "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap";
 const FONT_NAME = "'Roboto', sans-serif" || "arial";
@@ -7,7 +7,13 @@ const COLOR = {
   MENU_ITEMS: "#fff" || "#fff",
   HEADINGS: "#fff" || "#fff",
 };
+const SLIDER_TEXTS = ['nějaký text 1','nějaký text 2','nějaký text 3'];
 
+const IMAGES_SRC = [
+  "imgs/slider1.png",
+  "imgs/slider2.jpg",
+  "imgs/slider3.jpg",
+];
 const getTree = () => {
   let tree = "";
   const URL = window.location.pathname.split("/");

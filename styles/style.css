@@ -61,7 +61,7 @@ body {
   font-size: 70px;
   text-shadow: 2px 2px 2px #000000;
   line-height: 1.5;
-  color: white;
+  color: var(--headings-color);
 }
 
 .slider__dots__dot {
@@ -138,11 +138,12 @@ body {
   padding: 40px;
 
   background-color: #008165;
-  color: var(--white-text-color);
+  color: var(--headings-color);
 }
 
 .content-section__box h1 {
   font-size: calc(12px + 2.5vw);
+  
 }
 
 .content-section:nth-child(2) .content-section__box,

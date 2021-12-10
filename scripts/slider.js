@@ -1,17 +1,13 @@
 const dotsDiv = document.getElementById("dots");
-
+const textDiv = document.getElementById("slider__text");
 if (dotsDiv) {
-  const imagesSrcArray = [
-    "imgs/slider1.png",
-    "imgs/slider2.jpg",
-    "imgs/slider3.jpg",
-  ];
+
   let currentImageIndex = 0;
   let nextImageInterval = setInterval(() => nextImage(), 8000);
 
   const nextImage = () => {
     currentImageIndex += 1;
-    if (currentImageIndex >= imagesSrcArray.length) currentImageIndex = 0;
+    if (currentImageIndex >= IMAGES_SRC.length) currentImageIndex = 0;
     changeImageUrl(currentImageIndex);
   };
 
@@ -28,7 +24,8 @@ if (dotsDiv) {
     });
     dots[imgIndex].classList.add("slider__dots__dot-active");
 
-    sliderDiv.style.backgroundImage = `url(${imagesSrcArray[imgIndex]})`;
+    textDiv.innerText = SLIDER_TEXTS[imgIndex % SLIDER_TEXTS.length]
+    sliderDiv.style.backgroundImage = `url(${IMAGES_SRC[imgIndex]})`;
     sliderDiv.style.animation = "fadeIn 500ms";
 
     setTimeout(() => (sliderDiv.style.animation = ""), 500);
@@ -36,7 +33,7 @@ if (dotsDiv) {
     nextImageInterval = setInterval(() => nextImage(), 8000);
   };
 
-  for (let i = 0; i < imagesSrcArray.length; i++) {
+  for (let i = 0; i < IMAGES_SRC.length; i++) {
     let newDot = document.createElement("span");
     newDot.classList.add("slider__dots__dot");
     newDot.addEventListener("click", () => {
