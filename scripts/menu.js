@@ -8,7 +8,7 @@ const MENU_CONTENT = `
                 <div>Obory</div>
                 <ul>
                 <li>
-                    <a>Obory M</a>
+                    <a class="header__items__menu-subject">Obory M <i class="header__items__menu-subject-arrow"></i></a>
                     <ul>
                     <li>
                         <a href='${getTree()}pages/obory/index.html?subject=IT'
@@ -36,7 +36,7 @@ const MENU_CONTENT = `
                     </ul>
                 </li>
                 <li>
-                    <a>Obory L</a>
+                    <a  class="header__items__menu-subject">Obory L <i class="header__items__menu-subject-arrow"></i></a>
                     <ul>
                     <li>
                         <a href='${getTree()}pages/obory/index.html?subject=AUR'>Autotronik</a>
@@ -59,7 +59,7 @@ const MENU_CONTENT = `
                     </ul>
                 </li>
                 <li>
-                    <a>Obory H</a>
+                    <a  class="header__items__menu-subject">Obory H <i class="header__items__menu-subject-arrow"></i></a>
                     <ul>
                     <li>
                         <a href='${getTree()}pages/obory/index.html?subject=AMA'

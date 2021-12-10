@@ -94,3 +94,13 @@
 .header__items li ul li ul a:hover {
   padding-left: 20px;
 }
+
+.header__items__menu-subject:hover>.header__items__menu-subject-arrow{
+  border: solid var(--menu-background-color);
+  border-width: 0 0.2604166666666667vw 0.2604166666666667vw 0;
+  display: inline-block;
+  padding: 0.20833333333333334vw;
+  margin:0px 0px 0.15625vw  0.3125vw;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
