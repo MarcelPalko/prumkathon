@@ -6,14 +6,8 @@
 /* Set color variables */
 :root {
   --black-background-color: #000;
-  --light-blue-background-color: #2395cb;
-  --azure-background-color: #48cae4;
-  --default-blue-color: #193c6a;
-  --light-gray-text-color: #c9c9c9;
-  --warn-text-color: #d9004c;
-  --green-text-color: #00d100;
-  --default-blue: #193c6a;
   --white-text-color: #fff;
+  --white-background-color: #fff;
 
   --menu-background-color: #193c6a;
   --menu-items-color: #fff;
@@ -81,7 +75,7 @@ body {
 
 .slider__dots__dot-active,
 .dot:hover {
-  background-color: var(--default-blue-color);
+  background-color: var(--menu-background-color);
 }
 
 .slider__dots {
@@ -92,7 +86,6 @@ body {
   position: absolute;
   font-size: 15px;
   text-align: center;
-  color: #f2f2f2;
 }
 .slider-loader {
   background-color: gray;
@@ -100,7 +93,7 @@ body {
   height: 4px;
 }
 .slider-loader__line {
-  background-color: white;
+  background-color: var(--white-background-color);
   height: 4px;
 }
 
@@ -108,7 +101,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: var(--white-text-color);
+  background-color: var(--white-background-color);
 }
 
 .content-section {
@@ -142,7 +135,7 @@ body {
 }
 
 .content-section__box h1 {
-  font-size: calc(12px + 2.5vw);
+  font-size: calc(12px + 1.5vw);
   
 }
 
@@ -165,8 +158,8 @@ body {
   width: 60%;
   margin: 20px 0;
 
-  background-color: var(--white-text-color);
-  color: var(--main-blue-color);
+  background-color: var(--white-background-color);
+  color: var(--menu-background-color);
 }
 
 .content-section__box--reversed a {
@@ -189,7 +182,7 @@ body {
   cursor: pointer;
   display: flex;
 
-  font-size: 2.5vw;
+  font-size: calc(12px + 1.2vw);
 }
 
 .content-section__box--reversed h1::before {
