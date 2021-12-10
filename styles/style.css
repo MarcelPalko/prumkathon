@@ -141,6 +141,12 @@ body {
   background-color: var(--white-text-color);
 }
 
+.content__kontakty {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
 .content-section {
   display: flex;
   width: 100%;
@@ -390,6 +396,83 @@ ul {
   width: 100%;
   background-color: #f1f8fd;
   padding-bottom: 4px;
+}
+
+.content-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.content-row__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 5.208vw;
+
+  overflow: hidden;
+}
+
+.content-row__wrap-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5.208vw;
+
+  overflow: hidden;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 60%;
+}
+
+.content-column__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+
+  max-width: 80%;
+  padding: 30px 0;
+}
+
+.content-text__o-nas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+
+  max-width: 80%;
+  padding: 30px 0;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.kontakty-img {
+  height: calc(200px + 30vw);
+}
+
+.o-nas-img {
+  height: calc(200px + 15vw);
 }
 
 @keyframes fadeIn {
