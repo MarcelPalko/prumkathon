@@ -39,9 +39,16 @@ const COLOR = {
   MENU_ITEMS: "#fff" || "#fff",
   HEADINGS: "#fff" || "#fff",
 };
+const SLIDER_TEXTS = ['nějaký text 1', 'nějaký text <br> text text', 'nějaký text 3'];
+
+const IMAGES_SRC = [
+  "imgs/slider1.png",
+  "imgs/slider2.jpg",
+  "imgs/slider3.jpg",
+];
 
 const MENU_ITEMS = ["EXPAND", "o-nas", "kontakty"];
-const MENU_EXPAND_ITEMS = {
+const MENU_EXPAND_ITEMS = [{
   title: "obory",
   children: [
     {
@@ -95,7 +102,8 @@ const MENU_EXPAND_ITEMS = {
       ],
     },
   ],
-};
+}
+];
 
 /** SCRIPTS IMPORT */
 importScript("scripts/drobMenu.js");
