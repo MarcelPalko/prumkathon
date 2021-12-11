@@ -253,8 +253,9 @@ a {
 
 .drob-menu-line {
   width: 100%;
-  position: relative;
+  top:80px;
 
+  position: absolute;
   background-color: #f1f8fd;
 }
 
