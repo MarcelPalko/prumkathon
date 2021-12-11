@@ -18,7 +18,6 @@ if (dotsDiv) {
     loaderLine.style.animation = "";
     void loaderLine.offsetWidth;
     loaderLine.style.animation = "loader 8s linear";
-
     Array.from(dots).forEach((item) => {
       item.classList.remove("slider__dots__dot-active");
     });
@@ -26,9 +25,11 @@ if (dotsDiv) {
 
     textDiv.innerHTML = SLIDER_TEXTS[imgIndex % SLIDER_TEXTS.length]
     sliderDiv.style.backgroundImage = `url(${IMAGES_SRC[imgIndex]})`;
-    sliderDiv.style.animation = "fadeIn 500ms";
 
-    setTimeout(() => (sliderDiv.style.animation = ""), 500);
+    sliderDiv.style.animation = ""
+    void sliderDiv.offsetWidth;
+    sliderDiv.style.animation = "fadeIn 500ms";
+    //setTimeout(() => (sliderDiv.style.animation = ""), 500);
     clearInterval(nextImageInterval);
     nextImageInterval = setInterval(() => nextImage(), 8000);
   };
