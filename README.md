@@ -33,7 +33,7 @@ Funkce obsažené v konfigu jsou Námi vytvořené pro lepší abstrakci. Jsou t
 Texty uložené v SLIDER_TEXTS se nemusí rovnat počtu obrázků použité pro slider (opakují se).
 
 ### Menu
-V menu jsou dva vyrvořené presety: 
+V menu jsou dva vytvořené presety: 
 - První odkazuje na první úroveň stránky
 - Druhý nabízí rozbalovací menu pro jednu/dvě úrovně
 
