@@ -1,5 +1,5 @@
 # Průmkathon Projekt
-Projekt je zaměřen na jednoduchot znovu použití tedy replikovatelnosti. 
+Projekt je zaměřen na jednoduchost znovu použití tedy replikovatelnosti. 
 
 ## Autoři řešení (Aces)
 - [Marcel Palko](https://github.com/MarcelPalko)
