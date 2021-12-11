@@ -13,6 +13,7 @@
 .footer a {
   text-decoration: none;
   color: var(--white-text-color);
+  font-size: 13px;
 }
 
 .footer__content {
@@ -21,24 +22,27 @@
   justify-content: space-between;
   align-items: center;
   gap: 5.208333333333333vw;
+  height: 100%;
 
   color: var(--menu-items-color);
+  overflow: hidden;
 }
 
 .footer__logo {
   height: 50px;
-  /* width: 120px; */
 }
 
 .footer__content-column {
   display: flex;
   flex-direction: column;
-  gap: 0.5208333333333334vw;
+  justify-content: space-evenly;
+
+  height: 100%;
 }
 
 .footer__content-title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: calc(15px + 0.26vw);
   padding-bottom: 10px;
   position: relative;
 }
@@ -49,7 +53,7 @@
   position: absolute;
   left: 0px;
   bottom: 0px;
-  width: 90px;
+  width: calc(60px + 1.56vw);
   height: 2px;
   background-color: #fff;
 }

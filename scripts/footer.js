@@ -2,7 +2,7 @@ const FOOTER_CONTENT = `
     <div></div>
     <div class="footer__content">
         <div class="footer__content-column">
-          <div class="footer__content-title">Kontakt</div>
+          <div class="footer__content-title">Contact</div>
           <a href="#"><div>
             <i class="fontawesome-icon fas fa-phone-alt"></i>111 222 333
           </div></a>
