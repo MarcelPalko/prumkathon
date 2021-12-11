@@ -1,8 +1,6 @@
 # Průmkathon Projekt
 Projekt je zaměřen na jednoduchot znovu použití tedy replikovatelnosti. 
 
-<br />
-
 ## Autoři řešení (Aces)
 - [Marcel Palko](https://github.com/MarcelPalko)
 - [Lukáš Kotoun](https://github.com/LukasKotoun)
@@ -21,13 +19,9 @@ project
 ...
 ```
 
-<br />
-
 ## Nastavení configu
 Nastavení webu je zcela jednoduché, uložené obrázky, ikony a loga uložíte do /imgs složky a poté zadáte cestu k náležité konstantě tzn. (LOGO = "imgs/logo.png"),\
 pokud tak neučiníte nastaví se defaultní logo, toto se týká všech konstant které mají při sobě tyto znaky "||".
-
-<br />
 
 ### Funkce
 Funkce obsažené v konfigu jsou Námi vytvořené pro lepší abstrakci. Jsou to:
@@ -35,12 +29,8 @@ Funkce obsažené v konfigu jsou Námi vytvořené pro lepší abstrakci. Jsou t
 - importScript => vytvoří script element, který zasadí do hlavičky s vlastností defer (tudíž stačí fyzicky naimportovat JEN config do šablony)
 - capitalizeFirst =>  u slova/věty nastaví první písmeno na velké
 
-<br />
-
 ### Slider
 Texty uložené v SLIDER_TEXTS se nemusí rovnat počtu obrázků použité pro slider (opakují se).
-
-<br />
 
 ### Menu
 V menu jsou dva vyrvořené presety: 
@@ -50,8 +40,6 @@ V menu jsou dva vyrvořené presety:
 Tedy pokud chcete použít rozbalovací menu tak do MENU_ITEMS vložte EXPAND pokud ne použijte název položky v menu (jestli je zde mezera zaměňte za pomlčku),\
 MENU_EXPAND_ITEMS obsahuje strukturu rozbalovacího menu kde maximální vnoření je children na children tedy dvě úrovně.\
 viz. kód
-
-<br />
 
 ## config.js
 ```
