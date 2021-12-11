@@ -14,6 +14,7 @@
 .content-title {
   display: flex;
   flex-direction: column;
+  margin-top: calc(40px - 0.8vw);
 }
 
 .content-title h1 {
