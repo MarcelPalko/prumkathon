@@ -8,8 +8,6 @@ Projekt je zaměřen na jednoduchot znovu použití tedy replikovatelnosti.
 - [Lukáš Kotoun](https://github.com/LukasKotoun)
 - [Petr Novák](https://github.com/PeTroll7)
 
-<br />
-
 ## Řešení
 Celý web lze jednoduše nakonfigurovat přes jeden jediný soubour a to config.js
 
