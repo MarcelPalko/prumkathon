@@ -18,7 +18,7 @@ project
 │   README.md
 │   index.html  
 └───config
-│   │   config.js
+│     config.js
 |
 ...
 ```
