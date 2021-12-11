@@ -26,7 +26,7 @@ pokud tak neučiníte nastaví se defaultní logo, toto se týká všech konstan
 ### Funkce
 Funkce obsažené v konfigu jsou Námi vytvořené pro lepší abstrakci. Jsou to:
 - getTree => zjistí aktuální pozici vnoření na stránce a vrátí daný prefix např. "./" pro první úroveň.
-- importScript => vytvoří script element, který zasadí do hlavičky s vlastností defer (tudíž stačí fyzicky naimportovat JEN config do šablony)
+- importScript => vytvoří script element, který zasadí do hlavičky s vlastností defer (tudíž stačí fyzicky naimportovat JEN config.js script do šablony)
 - capitalizeFirst =>  u slova/věty nastaví první písmeno na velké
 
 ### Slider
